@@ -43,8 +43,107 @@
      .des_image:hover {
         transform: scale(1.05);
      }
+     
+     .title_Text {
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+   }
+
+   .rating_Text{
+       margin-left: 5px;
+       color:#ff6e26;
+       font-size: 19px;
+    }
+    
+  .des_price_Text {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #333;
+    font-weight: 700;
+    margin-left: 5px;
+    line-height: 33px;
+   
 
     
+    display:inline-block;
+    }
+
+    .card_discount{
+        margin-left: 10px;
+        display:inline-block;
+        background-color: #fff5f0;
+        color:tomato;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .des_size{
+        margin-left: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(95, 94, 94);
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .buy_div{
+        margin-top: 50px;
+        margin-left: 5px;
+        border: 1px solid blue;
+        width: 90%;
+        height: 130px; 
+        display: flex;
+       
+    }
+
+    .buyNow{
+        margin: 15px 20px 15px 15px;
+        background-color: #ff2b2a;
+        width: 230px;
+        height:80px;
+        border-radius: 10px;
+        color:whitesmoke;
+        text-align: center;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        
+        display: flex; 
+        justify-content: center;
+         align-items: center;
+         border:none;
+
+    }
+
+    .buyNow_Orange{
+        background-color: #ff9900;
+
+        margin: 15px 20px 15px 15px;
+        
+        width: 230px;
+        height:80px;
+        border-radius: 10px;
+        color:whitesmoke;
+        text-align: center;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        
+        display: flex; 
+        justify-content: center;
+         align-items: center;
+         border:none;
+        
+
+
+    }
 
     </style>
 
@@ -54,14 +153,14 @@
     <nav class="main_nav">
 
         <div class="nav_style">
-            <img src="Icon.PNG" class="logo"/>
-            <input oninput="" type="search"  id="Search_input" placeholder="Enter movie name"  />
+            <a href="Home.html"> <img src="Icon.PNG" class="logo"/> </a>
+            <input oninput="" type="search"  id="Search_input" placeholder="Enter products name"  />
            
     
             <div class="user_cart">
                 <a class="iuser" href=""><i class="far fa-user"></i></a>
                 
-                <a class="icart" href=""><i class="fas fa-shopping-cart"></i></a>
+                <a class="icart" href="MensCart.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </nav>
@@ -125,24 +224,93 @@ function showProduct_Description(d)
     title.innerHTML=el.title
     title.setAttribute("class" , "title_Text")
 
-
+   
     let rating = document.createElement('h2');
     rating.innerHTML=el.rating
     rating.setAttribute("class" , "rating_Text")
 
+    let price = document.createElement('h2');
+    price.innerHTML= "₹ " +el.price;
+    price.setAttribute("class" , "des_price_Text")
 
-    title_div.append(title , rating)
+    let discount= document.createElement('p');
+     discount.textContent= " -"+el.discount;
+     discount.setAttribute("class" , "card_discount")
 
+
+     let color= document.createElement('p');
+     color.textContent= "Color: "+el.color;
+     color.setAttribute("class" , "des_size")
+
+     let size= document.createElement('p');
+     size.textContent= "Size: "+el.size;
+     size.setAttribute("class" , "des_size")
+   
+     let ship= document.createElement('p');
+     ship.textContent= "Ship from: "+el.ship_from;
+     ship.setAttribute("class" , "des_size")
+
+
+
+     let buy_div  = document.createElement('div');
+     buy_div.setAttribute("class" , "buy_div");
+
+
+     let buy_Now  = document.createElement('button');
+      buy_Now.textContent="Buy Now";
+      buy_Now.setAttribute("class","buyNow")
+
+      buy_Now.onclick = function(){
+                    addtocart(el);
+                  //alert("clicked");
+                  window.location.href = "MensCart.html";
+                  
+                }
+
+      
+
+
+      let add_Cart  = document.createElement('button');
+      add_Cart.textContent="Add to Cart";
+      add_Cart.setAttribute("class","buyNow_Orange")
+
+      add_Cart.onclick = function(){
+                    addtocart(el);
+                 //  alert("clicked");
+                 window.location.href = "MensCart.html";
+
+                }
+
+
+    
+                 //add to cart 
+        if(localStorage.getItem("BangoodCart") === null){
+            localStorage.setItem("BangoodCart", JSON.stringify([]));
+        }
+
+        
+        function addtocart(d){
+
+           let  arr = JSON.parse(localStorage.getItem("BangoodCart"));
+                arr.push(d);
+                localStorage.setItem("BangoodCart", JSON.stringify(arr));
+        
+        }
+
+
+     buy_div.append(buy_Now , add_Cart )
+
+     
+    title_div.append(title , rating , price, discount , color , size, ship , buy_div)
 
 
     div.append(img)
    
    
 
-   
     Upper_right_des.append(title_div)
    
-     Upper_left_des.append(div);
+    Upper_left_des.append(div);
    
    
    

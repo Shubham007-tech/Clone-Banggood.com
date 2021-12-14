@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banggood Cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="./styles/cart.css">
+    
+
+
+    <script src="https://kit.fontawesome.com/8ad275f1fc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
+
+    <style>
+     #right_view_cart{
+         
+         margin-left: 35px;
+         font-size: 16px;
+         width:320px;
+
+     }
+
+     #left_view_cart{
+         
+         width: 80%;
+
+         
+
+     }
+
+     .pay_btn{
+         
+         width: 300px;
+         height: 60px;
+
+         background-color: #ff6e26;
+         color:whitesmoke;
+         font-family: Helvetica, sans-serif;
+         font-size: 18px;
+         font-weight: 700;
+
+         border-radius: 5px;
+         border:none;
+     }
+
+     .cart_prod_pic{
+         width: 200px;
+         
+     }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <nav class="main_nav">
+
+        <div class="nav_style">
+            <a href="Home.html"> <img src="Icon.PNG" class="logo"/> </a>
+            <input oninput="" type="search"  id="Search_input" placeholder="Enter products name"  />
+           
+    
+            <div class="user_cart">
+                <a class="iuser" href=""><i class="far fa-user"></i></a>
+                
+                <a class="icart" href="MensCart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+   
+
+    <div id="container">
+
+        <div id="left_view_cart"></div>
+
+        <div id="right_view_cart">
+            <h1 id="total_amount_headline">Order summary</h1>
+        <h3 id="total_amount"></h3>
+        <br>
+        <br>
+        <p class="safe"> 100% SAFE AND SECURE</p>
+        
+        <button class="pay_btn"  onclick="window.location.href='Checkout.html'">Proceed to Checkout</button> 
+    </div>
+        
+
+    </div>
+
+    <div id="footer">
+
+        <!-- Add footer contents here -->
+        <!-- <div>file</div> -->
+
+    </div>
+
+</body>
+
+<script src="./MensCart.js"></script>
+
+
+</html>
