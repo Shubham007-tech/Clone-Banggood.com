@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Details</title>
+    <script src="https://kit.fontawesome.com/8ad275f1fc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <style>
+
+     .Upper_Des_Box{
+       
+        width:99%;
+        height: 900px;
+        border: 1px solid rgb(255, 51, 0);
+        display:flex;
+     }
+
+     .Upper_left_des{
+         margin: 10px 10px 20px 10px;
+         width: 42%;
+         height:790px;
+         border: 1px solid black;
+
+     }
+
+     .Upper_right_des{
+
+        margin: 10px 10px 20px 10px;
+         width: 55%;
+         height:830px;
+         border: 1px solid rgb(48, 2, 2);
+
+     }
+
+     .des_image{
+         margin:15px 5px 5px 20px;
+         width: 460px;
+     }
+
+     .des_image:hover {
+        transform: scale(1.05);
+     }
+
+    
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="main_nav">
+
+        <div class="nav_style">
+            <img src="Icon.PNG" class="logo"/>
+            <input oninput="" type="search"  id="Search_input" placeholder="Enter movie name"  />
+           
+    
+            <div class="user_cart">
+                <a class="iuser" href=""><i class="far fa-user"></i></a>
+                
+                <a class="icart" href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="Upper_Des_Box">
+       
+        <div class="Upper_left_des" id="Upper_left_des"></div>
+        <div class="Upper_right_des" id="Upper_right_des"></div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div id="prod"></div>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+
+let productArr = JSON.parse(localStorage.getItem("itemData"));
+console.log(productArr);
+
+let Upper_left_des = document.getElementById("Upper_left_des")
+let Upper_right_des = document.getElementById("Upper_right_des")
+
+
+function showProduct_Description(d)
+ {
+  
+
+    parent.innerHTML = null;
+   
+   d.forEach( function ( el)
+   {
+      // console.log("im in" , el)
+   let div = document.createElement('div');
+   div.setAttribute("class" , "MFdiv")
+
+ 
+    let img = document.createElement('img');
+    img.src= el.product_image;
+    img.setAttribute("class" , "des_image")
+    
+    let title_div = document.createElement('div');
+    title_div.setAttribute("class" , "title_div");
+
+    let title = document.createElement('h2');
+    title.innerHTML=el.title
+    title.setAttribute("class" , "title_Text")
+
+
+    let rating = document.createElement('h2');
+    rating.innerHTML=el.rating
+    rating.setAttribute("class" , "rating_Text")
+
+
+    title_div.append(title , rating)
+
+
+
+    div.append(img)
+   
+   
+
+   
+    Upper_right_des.append(title_div)
+   
+     Upper_left_des.append(div);
+   
+   
+   
+    } );
+
+
+
+    
+
+
+
+ }
+
+
+
+ showProduct_Description(productArr)
+
+
+</script>

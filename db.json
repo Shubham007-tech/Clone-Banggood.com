@@ -1,0 +1,449 @@
+{
+  "products": [
+
+    {
+      "id": "1",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/94/60/898e6ec2-e3e7-44f5-8046-c637029f25c1.jpg.webp",
+      "title": "Mens Stripe Patchwork Chest Pocket Lapel Long Sleeve Cotton Shirts",
+      "brand": "Charmkpr",
+      "price": "1918",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "10%",
+
+      "decoration": "pocket",
+      "fit_type": "regular_Fit",
+      "style": "casual",
+      "material":"polyester",
+      "pattern_type":"striped",
+      "color":"yellow"
+
+     
+    },
+    {
+      "id": "2",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/13/2F/85066b60-ce6d-4ae5-9abb-4068898c07e5.jpg.webp",
+      "title": "Mens Fashion Plaid Printed Colorful Stand Collar Shirts",
+      "brand": "Charmkpr",
+      "price": "1890",
+      "size": "L",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "10%",
+
+      "decoration": "pocket",
+      "fit_type": "regular_Fit",
+      "style": "casual",
+      "material":"polyester",
+      "pattern_type":"striped",
+      "color":"yellow"
+
+     
+    },
+    {
+      "id": "3",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/73/BA/19bfcc4f-5f46-4486-ab7a-5f5b39567f06.jpg.webp",
+      "title": "Mens Astronaut Shooting Cartoon Print Crew Neck Short Sleeve T-Shirts",
+      "brand": "Charmkpr",
+      "price": "1400",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "20%",
+
+      "decoration": "veins",
+      "fit_type": "loose",
+      "style": "cute",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"black"
+
+     
+    },
+    {
+      "id": "4",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/57/3C/d2f4324e-39ca-41e3-ad18-1bf7a2450a29.jpg.webp",
+      "title": "Men Cotton Solid Label Round Neck Long Sleeve Casual T-Shirts",
+      "brand": "Charmkpr",
+      "price": "1679",
+      "size": "L",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "pattern",
+      "fit_type": "loose",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"blue"
+
+     
+    },
+    {
+      "id": "5",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/92/33/d607cd3b-305b-4001-a880-a987ad4ba2de.jpg.webp",
+      "title": "Mens Plain Character Slogan Print Breathable Black Short Sleeve T-Shirts",
+      "brand": "",
+      "price": "1700",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "6%",
+
+      "decoration": "",
+      "fit_type": "",
+      "style": "",
+      "material":"",
+      "pattern_type":"",
+      "color":""
+
+     
+    },
+    {
+      "id": "6",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/43/6E/683ed069-a130-49b3-b4fc-6f13357354ac.jpg.webp",
+      "title": "Big Pockets Stitching Short Sleeve Relaxed T-Shirts",
+      "brand": "Incerun",
+      "price": "1890",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "pocket",
+      "fit_type": "loose",
+      "style": "simple",
+      "material":"polyester",
+      "pattern_type":"solid",
+      "color":"black"
+
+     
+    },
+    {
+      "id": "7",
+      "product_image": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/2F/22/c7faae25-b16c-4b73-a137-f5086b5076b0.jpg.webp",
+      "title": "Mens 3D Striped Cat Printing Round Neck Casual Short Sleeve T-Shirt",
+      "brand": "Incerun",
+      "price": "1590",
+      "size": "L",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "26%",
+
+      "decoration": "pocket",
+      "fit_type": "loose",
+      "style": "simple",
+      "material":"polyester",
+      "pattern_type":"solid",
+      "color":"black"
+
+     
+    },
+    {
+      "id": "8",
+      "product_image": "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/64/9F/82f8d3df-a8ff-42f2-a8f5-f28a06223c25.jpg.webp",
+      "title": "Mens Newspaper Print Round Neck Short Sleeve Casual T-Shirts",
+      "brand": "Incerun",
+      "price": "2000",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "12%",
+
+      "decoration": "pocket",
+      "fit_type": "loose",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"letter",
+      "color":"white"
+
+     
+    },
+    {
+      "id": "9",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/ser1/banggood/images/1F/9A/19fdf092-a928-473a-aaf6-a3a7459d3aa6.jpg.webp",
+      "title": "Mens Cottonn Tropical Leaves Prinnt Short Sleeve Oriental Henley Shirts",
+      "brand": "Incerun",
+      "price": "2890",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "pocket",
+      "fit_type": "loose",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"white"
+
+     
+    },
+    {
+      "id": "10",
+      "product_image": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/8F/05/77c0e33f-77f9-49e6-873b-350d151d77dd.jpeg.webp",
+      "title": "Mens Fashion Breathable Multi Colors Stripe Chest Pocket Short Sleeve Casual Shirts -",
+      "brand": "Incerun",
+      "price": "2100",
+      "size": "L",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "pocket",
+      "fit_type": "slim",
+      "style": "cute",
+      "material":"flax",
+      "pattern_type":"solid",
+      "color":"white"
+
+     
+    },
+    {
+      "id": "11",
+      "product_image": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/D2/CA/4725fb7f-bc78-4e45-ab8f-79e3711abe55.jpg.webp",
+      "title": "Mens Vintage Striped Breathable Short Sleeve Casual Shirts",
+      "brand": "Incerun",
+      "price": "1900",
+      "size": "L",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "veins",
+      "fit_type": "slim",
+      "style": "cute",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"yellow"
+
+     
+    },
+    {
+      "id": "12",
+      "product_image": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/C4/23/93f7cde1-5ba1-4d30-8f76-12d00ccf03dc.jpg.webp",
+      "title": "Mens Cotton linen Breathable Solid Color Short Sleeve Henley Shirts",
+      "brand": "Henley",
+      "price": "2165",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★★",
+      "ship_from": "CN",
+      "discount": "6%",
+
+      "decoration": "veins",
+      "fit_type": "slim",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"yellow"
+
+     
+    },
+    {
+      "id": "13",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/80/5D/77b7f12e-4237-4ebf-bfb1-e0da80af586a.jpg.webp",
+      "title": "Mens Solid Color Basic Style Corduroy Lapel Short Sleeve Henley Shirt",
+      "brand": "Henley",
+      "price": "1999",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "pocket",
+      "fit_type": "slim",
+      "style": "simple",
+      "material":"flax",
+      "pattern_type":"solid",
+      "color":"grey"
+
+     
+    },
+    {
+      "id": "14",
+      "product_image": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/E9/E9/8ee89670-f65e-4937-b48b-4d619f359d28.JPG.webp",
+      "title": "Vertical Stripes Stand Collar Hawaii Casual Mens Short Sleeve Henley Shirts ",
+      "brand": "Henley",
+      "price": "1890",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "10%",
+
+      "decoration": "pocket",
+      "fit_type": "loose",
+      "style": "simple",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"grey"
+
+     
+    },
+
+    {
+      "id": "15",
+      "product_image": "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B4/E9/3cdbf12c-eed5-48fd-977d-0db1f558ff68.jpg.webp",
+      "title": "Mens Vintage Chinese Style Cotton Solid Color Stand Collar Casual Summer T Shirts",
+      "brand": "Henley",
+      "price": "2165",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "6%",
+
+      "decoration": "veins",
+      "fit_type": "slim",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"white"
+
+     
+    },
+    {
+      "id": "16",
+      "product_image": "https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/E9/63/25395ecf-7261-43d8-bb83-e1259a5483ec.png.webp",
+      "title": "Mens Vintage Cotton Shirts Stand Collar Solid Color Short Sleeve Loose Henley Shirts",
+      "brand": "Henley",
+      "price": "1999",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "pocket",
+      "fit_type": "slim",
+      "style": "simple",
+      "material":"flax",
+      "pattern_type":"solid",
+      "color":"blue"
+
+     
+    },
+    {
+      "id": "17",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/30/53/ac95056f-5445-42da-b8d1-04be0b7ae1ee.jpg.webp",
+      "title": " Stripes Stand Collar Hawaii Casual Mens Short Sleeve Henley Shirts ",
+      "brand": "Henley",
+      "price": "1890",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "10%",
+
+      "decoration": "pocket",
+      "fit_type": "loose",
+      "style": "simple",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"red"
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "",
+      "title": "",
+      "brand": "",
+      "price": "",
+      "size": "",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "",
+      "fit_type": "",
+      "style": "",
+      "material":"",
+      "pattern_type":"",
+      "color":""
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "",
+      "title": "",
+      "brand": "",
+      "price": "",
+      "size": "",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "",
+      "fit_type": "",
+      "style": "",
+      "material":"",
+      "pattern_type":"",
+      "color":""
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "",
+      "title": "",
+      "brand": "",
+      "price": "",
+      "size": "",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "",
+      "fit_type": "",
+      "style": "",
+      "material":"",
+      "pattern_type":"",
+      "color":""
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "",
+      "title": "",
+      "brand": "",
+      "price": "",
+      "size": "",
+      "type": "Tshirt",
+      "rating": "★★★★",
+      "ship_from": "CN",
+      "discount": "16%",
+
+      "decoration": "",
+      "fit_type": "",
+      "style": "",
+      "material":"",
+      "pattern_type":"",
+      "color":""
+
+     
+    }
+
+
+  ]
+}
