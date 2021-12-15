@@ -24,7 +24,7 @@
     },
     {
       "id": "2",
-      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/13/2F/85066b60-ce6d-4ae5-9abb-4068898c07e5.jpg.webp",
+      "product_image": "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/CC/9E/0d421b82-671b-4a40-a90e-f69befeec481.jpeg.webp",
       "title": "Mens Fashion Plaid Printed Colorful Stand ",
       "brand": "Charmkpr",
       "price": "1890",
@@ -257,13 +257,13 @@
       "id": "13",
       "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/80/5D/77b7f12e-4237-4ebf-bfb1-e0da80af586a.jpg.webp",
       "title": "Mens Solid Color Basic Style Corduroy Lapel Short Sleeve Henley Shirt",
-      "brand": "Henley",
+      "brand": "Incerun",
       "price": "1999",
       "size": "M",
       "type": "Tshirt",
       "rating": "★★★★",
       "ship_from": "CN",
-      "discount": "16%",
+      "discount": "11%",
 
       "decoration": "pocket",
       "fit_type": "slim",
@@ -321,13 +321,13 @@
       "id": "16",
       "product_image": "https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/E9/63/25395ecf-7261-43d8-bb83-e1259a5483ec.png.webp",
       "title": "Mens Vintage Cotton Color Short Sleeve Loose Henley Shirts",
-      "brand": "Henley",
+      "brand": "Incerun",
       "price": "1999",
       "size": "M",
       "type": "Tshirt",
       "rating": "★★★",
       "ship_from": "CN",
-      "discount": "16%",
+      "discount": "5%",
 
       "decoration": "pocket",
       "fit_type": "slim",
@@ -360,21 +360,42 @@
      
     },
     {
-      "id": "",
-      "product_image": "",
-      "title": "",
-      "brand": "",
-      "price": "",
-      "size": "",
+      "id": "18",
+      "product_image": "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/EE/C6/a227a938-1ed5-4d69-bac6-1512693aeb73.jpeg.webp",
+      "title": "Mens Embroidery Tricolor Vines Knitted Texture Short Sleeve",
+      "brand": "Charmkpr",
+      "price": "899",
+      "size": "L",
       "type": "Tshirt",
       "rating": "★★★★",
       "ship_from": "CN",
-      "discount": "16%",
+      "discount": "31%",
+
+      "decoration": "pocket",
+      "fit_type": "slim",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"black"
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/3C/7B/db5249e9-c852-4a87-9973-9009afbb8c40.jpg.webp",
+      "title": "Mens Striped Patchwork Crew Neck Knit Veins",
+      "brand": "Incerun",
+      "price": "1300",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "3%",
 
       "decoration": "",
-      "fit_type": "",
-      "style": "",
-      "material":"",
+      "fit_type": "loose",
+      "style": "cute",
+      "material":"flax",
       "pattern_type":"",
       "color":""
 
@@ -382,63 +403,110 @@
     },
     {
       "id": "",
-      "product_image": "",
-      "title": "",
-      "brand": "",
-      "price": "",
-      "size": "",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/48/6E/91b8967c-19f8-44a1-898f-9c6f216ff0f8.jpg.webp",
+      "title": "Mens Smile Chest Print O-Neck Casual Loose Short Sleeve",
+      "brand": "Charmkpr",
+      "price": "5000",
+      "size": "M",
       "type": "Tshirt",
       "rating": "★★★",
       "ship_from": "CN",
       "discount": "16%",
 
       "decoration": "",
-      "fit_type": "",
-      "style": "",
-      "material":"",
+      "fit_type": "loose",
+      "style": "simple",
+      "material":"cotton",
       "pattern_type":"",
       "color":""
 
      
     },
+    
     {
       "id": "",
-      "product_image": "",
-      "title": "",
-      "brand": "",
-      "price": "",
-      "size": "",
-      "type": "Tshirt",
-      "rating": "★★★",
-      "ship_from": "CN",
-      "discount": "16%",
-
-      "decoration": "",
-      "fit_type": "",
-      "style": "",
-      "material":"",
-      "pattern_type":"",
-      "color":""
-
-     
-    },
-    {
-      "id": "",
-      "product_image": "",
-      "title": "",
-      "brand": "",
-      "price": "",
-      "size": "",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/45/9B/015c14ff-6ecf-4b1c-8072-244636067747.jpg.webp",
+      "title": "Mens Yellow Vines Knitted Texture Short Sleeve",
+      "brand": "Charmkpr",
+      "price": "8000",
+      "size": "L",
       "type": "Tshirt",
       "rating": "★★★★",
       "ship_from": "CN",
-      "discount": "16%",
+      "discount": "31%",
+
+      "decoration": "pocket",
+      "fit_type": "slim",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
+      "color":"black"
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/4D/9C/47caa935-bc05-4956-bb38-bc60cc961049.jpeg.webp",
+      "title": "Mens Tri Striped Patchwork Crew Neck Knit Veins",
+      "brand": "Incerun",
+      "price": "1399",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "3%",
 
       "decoration": "",
-      "fit_type": "",
-      "style": "",
-      "material":"",
+      "fit_type": "loose",
+      "style": "cute",
+      "material":"flax",
       "pattern_type":"",
+      "color":""
+
+     
+    },
+    {
+      "id": "",
+      "product_image": "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0E/79/4a8790ef-1882-418b-a14d-6124400dc70f.jpg.webp",
+      "title": "Mens  Chest Print O-Neck Casual Loose Short Sleeve",
+      "brand": "Charmkpr",
+      "price": "3200",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "22%",
+
+      "decoration": "",
+      "fit_type": "loose",
+      "style": "simple",
+      "material":"cotton",
+      "pattern_type":"",
+      "color":""
+
+     
+    },
+
+
+
+
+    {
+      "id": "",
+      "product_image": "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/BD/50/cb3d9f59-6aef-4c8d-a55d-5c6fb36b7c0b.jpg.webp",
+      "title": "Mens Color Block Patchwork Crew Neck T-Shirts",
+      "brand": "Incerun",
+      "price": "2390",
+      "size": "M",
+      "type": "Tshirt",
+      "rating": "★★★",
+      "ship_from": "CN",
+      "discount": "6%",
+
+      "decoration": "",
+      "fit_type": "slim",
+      "style": "casual",
+      "material":"cotton",
+      "pattern_type":"solid",
       "color":""
 
      
