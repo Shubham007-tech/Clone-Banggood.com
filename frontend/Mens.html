@@ -62,7 +62,7 @@
                width : 96%;
                margin:0px;
                padding:0px;
-               height:3200px;
+               
 
                border: 1px solid green;
                
@@ -227,8 +227,8 @@
 
             <select id="Sort" class="Sort" onchange="Sorting()">
                 <option > Sort by:</option>
-               <option value="Rat"> Rating- High To Low</option>
-               <option value="Ret"> Returns- High To Low</option>
+               <option value="Rat"> Price- High To Low</option>
+               <option value="Ret"> Price- Low To High</option>
             </select>
 
         </div>
@@ -248,107 +248,74 @@
     <div class="filter_section scroll">
     <div class="filterHeading">Brand</div>
     <div class="box">
-        <input type="checkbox" value="Axis" class="checkbox amctick" id="axis">
-        <label for="axisMF">Axis Mutual Fund</label> 
+        <input type="checkbox" value="Charmkpr" class="checkbox amctick" >
+        <label >Charmkpr</label> 
     </div>
     <div class="box">
-      <input type="checkbox" value="ICICI" class="checkbox amctick" id="icici">
-      <label for="iciciMF">ICICI Prudential Technology</label> 
+      <input type="checkbox" value="Henley" class="checkbox amctick" >
+      <label >Henley</label> 
   </div>
   <div class="box">
-      <input type="checkbox" value="HDFC" class="checkbox amctick" id="hdfc">
-      <label for="hdfcMF">HDFC</label> 
+      <input type="checkbox" value="Incerun" class="checkbox amctick" >
+      <label >Incerun</label> 
   </div>
-  <div class="box">
-    <input type="checkbox" value="TATA" class="checkbox amctick" id="tata">
-    <label for="tata">TATA Digital India</label> 
-</div>
-<div class="box">
-    <input type="checkbox" value="Paragh Parikh" class="checkbox amctick" id="">
-    <label for="">Paragh Parikh</label> 
-</div>
-
-<div class="box">
-    <input type="checkbox" value="UTI" class="checkbox amctick" id="">
-    <label for="">UTI Flexi Cap</label> 
-</div> 
-<div class="box">
-    <input type="checkbox" value="Kotak" class="checkbox amctick" id="">
-    <label for="">Kotak Bluechip Funds</label> 
-</div>
-<div class="box">
-    <input type="checkbox" value="Aditya Birla" class="checkbox amctick" id="">
-    <label for="">Aditya Birla Sun Life</label> 
-</div>
-<div class="box">
-    <input type="checkbox" value="Nippon India Pharma" class="checkbox amctick" id="">
-    <label for="">Nippon India Pharma</label> 
-</div>
-<div class="box">
-    <input type="checkbox" value="SBI" class="checkbox amctick" id="">
-    <label for="">SBI Technology Oppurtunities Fund</label> 
-</div>
+ 
 
 
 </div> 
 
 
 <div class="filter_section cat">
-<div class="filterHeading ">Category</div>
+<div class="filterHeading ">Fit Type</div>
 <div class="box">
-    <input type="checkbox" value="Debt" class="checkbox c_tick" >
-    <label for="">Debt</label> 
+    <input type="checkbox" value="loose" class="checkbox c_tick" >
+    <label for="">Loose</label> 
 </div>
 <div class="box">
-  <input type="checkbox" value="Equity" class="checkbox  c_tick" >
-  <label for="">Equity</label> 
+  <input type="checkbox" value="slim" class="checkbox  c_tick" >
+  <label for="">Slim</label> 
 </div>
 <div class="box">
-  <input type="checkbox" value="Hybrid" class="checkbox  c_tick" >
-  <label for="">Hybrid</label> 
+  <input type="checkbox" value="regular_Fit" class="checkbox  c_tick" >
+  <label for="">Regular Fit</label> 
 </div>
-<div class="box">
-<input type="checkbox" value="others" class="checkbox  c_tick" >
-<label for="">Others</label> 
-</div>
+
+
 </div> 
 
 
 <div class="filter_section">
-<div class="filterHeading">Risk</div>
+<div class="filterHeading">Style</div>
 <div class="box">
-    <input type="checkbox" value="Low Risk" class="checkbox R_tick" >
-    <label for="">Low</label> 
+    <input type="checkbox" value="casual" class="checkbox R_tick" >
+    <label for="">Casual</label> 
 </div>
 <div class="box">
-  <input type="checkbox" value="Moderate Risk" class="checkbox R_tick" >
-  <label for="">Moderate </label> 
+  <input type="checkbox" value="cute" class="checkbox R_tick" >
+  <label for="">Cute </label> 
 </div>
 <div class="box">
-  <input type="checkbox" value="High Risk" class="checkbox R_tick" >
-  <label for="">High</label> 
+  <input type="checkbox" value="simple" class="checkbox R_tick" >
+  <label for="">Simple</label> 
 </div>
 
 </div> 
 
 <div class="filter_section">
-<div class="filterHeading">Fund Size</div>
+<div class="filterHeading">Material Used</div>
 <div class="box">
-    <input type="checkbox" value="2" class="checkbox F_tick" >
-    <label for="">Upto 1,000cr</label> 
+    <input type="checkbox" value="polyester" class="checkbox F_tick" >
+    <label for="">Polyester</label> 
 </div>
 <div class="box">
-  <input type="checkbox" value="4" class="checkbox F_tick" >
-  <label for="">Upto 2,000cr </label> 
+  <input type="checkbox" value="cotton" class="checkbox F_tick" >
+  <label for="">Cotton </label> 
 </div>
 <div class="box">
-  <input type="checkbox" value="10" class="checkbox F_tick" >
-  <label for="">Upto 5,000cr</label> 
+  <input type="checkbox" value="flax" class="checkbox F_tick" >
+  <label for="">Flax</label> 
 </div>
-<div class="box">
-<input type="checkbox" value="20" class="checkbox F_tick" >
-<label for="">Upto 10,000cr</label> 
-</div>
+
 
 </div> 
 
@@ -377,112 +344,8 @@
 </body>
 </html>
 
-<script>
-
-  
-     //To GET data from server
-     fetch("http://localhost:4000/api/products")
-     .then((res) => {
-         return res.json();
-     })
-     .then((res) => {
-         console.log("res: ", res);
-         viewP(res)
-        
-        
-         
-     })
-     .catch((err) => {
-         console.log(err);
-     })
- 
-     let box = document.getElementById("right")
-
-
-
-
-    
-     function viewP(d)
-      {
-         // console.log("bbb", d)
-        parent.innerHTML = null;
- 
-         d.forEach( function ( el)
-     {
-        // console.log("im in" , el)
-     let div = document.createElement('div');
-     div.setAttribute("class" , "product_card")
-
-     let card_text= document.createElement('div');
-     card_text.setAttribute("class" , "card_text")
-
-     let price = document.createElement('p');
-     price.textContent= "₹"+el.price;
-     price.setAttribute("class" , "card_price")
- 
-     let title = document.createElement('h3');
-     title.textContent= el.title ;
-     title.setAttribute("class" , "card_title")
-
-     let discount= document.createElement('p');
-     discount.textContent= el.discount+ " Off";
-     discount.setAttribute("class" , "card_discount")
-
-     card_text.append(price , discount, title)
-
-     
-     
-     let img = document.createElement('img');
-     img.src= el.product_image;
-     img.setAttribute("class" , "card_img")
-
-     div.onclick = function () {
-        referData(el)
-    }
-    
- 
-     div.append(img , card_text)
-     box.append(div)
-     } );
- 
- 
- 
- 
- 
- 
-   }  // VieWP ends
-
-
-
-   if (localStorage.getItem("itemData") == null) {
-    localStorage.setItem("itemData", JSON.stringify([]));
-}
-
-
-function referData(p) {
-
-    var ProductDes = JSON.parse(localStorage.getItem("itemData"));
-
-    ProductDes = [];
-
-    ProductDes.push(p);
-    console.log("pushed" , p)
-
-    localStorage.setItem("itemData", JSON.stringify(ProductDes));
-
-    window.location.href = "MensDescription.html";
-}
-
-
-
-
-
-      
- 
- 
- 
-   
- </script>
+<script src="./MensApp.js">
+</script>
  
  
  
