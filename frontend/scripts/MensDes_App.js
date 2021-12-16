@@ -56,6 +56,24 @@ function showProduct_Description(d)
      ship.setAttribute("class" , "des_size")
 
 
+     let secure_text= document.createElement('h3');
+     secure_text.textContent= "Secure Payment";
+     secure_text.setAttribute("class" , "cus_txt")
+
+
+     let secure_textB= document.createElement('p');
+     secure_textB.textContent= "✔ Multiple Payment option";
+     secure_textB.setAttribute("class" , "cus_txt")
+
+     let cus= document.createElement('h3');
+     cus.textContent= "Customer Service Guarantee";
+     cus.setAttribute("class" , "cus_txt")
+
+     let textB= document.createElement('p');
+     textB.innerHTML= "✔ DOA Guarantee "+'&nbsp&nbsp&nbsp&nbsp'+  "   ✔ No Reason Returns";
+     textB.setAttribute("class" , "cus_txt")
+
+
 
      let buy_div  = document.createElement('div');
      buy_div.setAttribute("class" , "buy_div");
@@ -102,7 +120,7 @@ function showProduct_Description(d)
      buy_div.append(buy_Now , add_Cart )
 
      
-    title_div.append(title , rating , price, discount , color , size, ship , buy_div)
+    title_div.append(title , rating , price, discount , color , size, ship , buy_div, secure_text,secure_textB, cus,textB)
 
 
     div.append(img)
