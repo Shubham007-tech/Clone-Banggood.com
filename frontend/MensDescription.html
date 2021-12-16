@@ -165,7 +165,8 @@
             </div>
         </div>
     </nav>
-
+  
+    <div id="goods_dropDown"></div>
 
 
     <div class="Upper_Des_Box">
@@ -185,149 +186,48 @@
 
     <div id="prod"></div>
 
+<!--------------------------------------------------------------------------------------------------------------------------->
+<div id="footer" class="footer">
+
+  
+
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="socialMediaIcons">
+  <i id="icon_footer" class="fab fa-facebook-square"></i>
+  <i id="icon_footer" class="fab fa-instagram"></i>
+  <i id="icon_footer" class="fab fa-snapchat-square"></i>
+  <i id="icon_footer" class="fas fa-grip-lines-vertical"></i>
+  <i id="icon_footer" class="fab fa-cc-visa"></i>
+  <i id="icon_footer" class="fab fa-cc-mastercard"></i>
+  <i id="icon_footer" class="fab fa-paypal"></i>
+  <i id="icon_footer" class="fab fa-cc-amex"></i>
+  <i id="icon_footer" class="fab fa-cc-paypal"></i>
+</div>
+
 
 
     
 </body>
 </html>
 
-<script>
+<script src="./scripts/MensDes_App.js">
 
 
-let productArr = JSON.parse(localStorage.getItem("itemData"));
-console.log(productArr);
-
-let Upper_left_des = document.getElementById("Upper_left_des")
-let Upper_right_des = document.getElementById("Upper_right_des")
-
-
-function showProduct_Description(d)
- {
-  
-
-    parent.innerHTML = null;
-   
-   d.forEach( function ( el)
-   {
-      // console.log("im in" , el)
-   let div = document.createElement('div');
-   div.setAttribute("class" , "MFdiv")
-
- 
-    let img = document.createElement('img');
-    img.src= el.product_image;
-    img.setAttribute("class" , "des_image")
-    
-    let title_div = document.createElement('div');
-    title_div.setAttribute("class" , "title_div");
-
-    let title = document.createElement('h2');
-    title.innerHTML=el.title
-    title.setAttribute("class" , "title_Text")
-
-   
-    let rating = document.createElement('h2');
-    rating.innerHTML=el.rating
-    rating.setAttribute("class" , "rating_Text")
-
-    let price = document.createElement('h2');
-    price.innerHTML= "₹ " +el.price;
-    price.setAttribute("class" , "des_price_Text")
-
-    let discount= document.createElement('p');
-     discount.textContent= " -"+el.discount;
-     discount.setAttribute("class" , "card_discount")
-
-
-     let color= document.createElement('p');
-     color.textContent= "Color: "+el.color;
-     color.setAttribute("class" , "des_size")
-
-     let size= document.createElement('p');
-     size.textContent= "Size: "+el.size;
-     size.setAttribute("class" , "des_size")
-   
-     let ship= document.createElement('p');
-     ship.textContent= "Ship from: "+el.ship_from;
-     ship.setAttribute("class" , "des_size")
-
-
-
-     let buy_div  = document.createElement('div');
-     buy_div.setAttribute("class" , "buy_div");
-
-
-     let buy_Now  = document.createElement('button');
-      buy_Now.textContent="Buy Now";
-      buy_Now.setAttribute("class","buyNow")
-
-      buy_Now.onclick = function(){
-                    addtocart(el);
-                  //alert("clicked");
-                  window.location.href = "MensCart.html";
-                  
-                }
-
-      
-
-
-      let add_Cart  = document.createElement('button');
-      add_Cart.textContent="Add to Cart";
-      add_Cart.setAttribute("class","buyNow_Orange")
-
-      add_Cart.onclick = function(){
-                    addtocart(el);
-                 //  alert("clicked");
-                 window.location.href = "MensCart.html";
-
-                }
-
-
-    
-                 //add to cart 
-        if(localStorage.getItem("BangoodCart") === null){
-            localStorage.setItem("BangoodCart", JSON.stringify([]));
-        }
-
-        
-        function addtocart(d){
-
-           let  arr = JSON.parse(localStorage.getItem("BangoodCart"));
-                arr.push(d);
-                localStorage.setItem("BangoodCart", JSON.stringify(arr));
-        
-        }
-
-
-     buy_div.append(buy_Now , add_Cart )
-
-     
-    title_div.append(title , rating , price, discount , color , size, ship , buy_div)
-
-
-    div.append(img)
-   
-   
-
-    Upper_right_des.append(title_div)
-   
-    Upper_left_des.append(div);
-   
-   
-   
-    } );
-
-
-
-    
-
-
-
- }
-
-
-
- showProduct_Description(productArr)
 
 
 </script>
+
+
+<script type="module">
+  
+
+    import bar from "./scripts/Footer.js";
+  
+  let footer_div = document.getElementById("footer");
+  
+  footer_div.innerHTML = bar();
+  
+  </script>
+ 

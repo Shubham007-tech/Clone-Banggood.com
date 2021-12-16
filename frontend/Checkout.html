@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banggood_Checkout</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./styles/checkout.css" rel="stylesheet">
     <style>
         body{
             background-color: #f7f7f7;
@@ -20,115 +22,7 @@
             
            
         }
-        .container1{
-            border: 2px ;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .container2{
-            border: 1px ;
-            height: fit-content;
-            margin-top: 10px;
-
-            /* width: 40%; */
-
-        }
-        #country{
-            height:42px;
-            width: 65%;
-            
-        }
-        
-        .count{
-            display: grid;
-            grid-template-columns: 10% 90%;
-        }
-        #promo{
-            height: 42px;
-            width: 58%;
-        }
-        #apply{
-            width: 35%;
-            height: 48px;
-            background-color: black;
-            font-size: 17px;
-            font-weight: 750;
-            color: white;
-            
-        }
-        #address{
-            height:30px;
-            width: 147px;
-            border:2px solid black;
-            font-size: 15px;
-            color: black;
-            font-weight: 600;
-        }
-       .addaddress > input{
-        height: 42px;
-        width: 58%;
-       }
-       #post{
-           width:32%;
-       }
-       #deliver{
-           width: 48%;
-           height: 42px;
-           background-color: black;
-           font-size: 15px;
-           color: white;
-           font-weight: 700;
-       }
-       .container1 > div{
-           border:3px ;
-           padding: 5%;
-           margin-top: 10px;
-       }
-       .container2 > div{
-           border:3px ;
-           padding: 5%;
-           margin-top: 10px;
-       }
-       .options{
-           width: 100%;
-           height: 63px;
-           margin-top: 10px;
-           font-size: 15px;
-           font-weight: 900;
-       }
-       .order{
-          margin:30px 30px 0 70px;
-           width: 85%;
-           height: 55px;
-           font-size: 15px;
-           font-weight: 900;
-           color: white;
-           background-color: #1976D2;
-       }
-       .edit{
-           font-size: 20px;
-           font-weight: 100;
-           float: right;
-       }
-       .head{
-           border: 1px ;
-           width: 70%;
-           margin: auto;
-
-           display: grid;
-           grid-template-columns: 40% 40% 10%;
-       }
-       .chek{
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-
-       }
-       .digi{
-        height: 10px;
-       }
-       .img_style{
-        width: 40px;height:40px;
-
-       }
+      
 
     </style>
 </head>
@@ -434,5 +328,41 @@
       
        </div>   
     </div>
+  
+       <!--------------------------------------------------------------------------------------------------------------------------->
+<div id="footer" class="footer">
+
+  
+
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="socialMediaIcons">
+  <i id="icon_footer" class="fab fa-facebook-square"></i>
+  <i id="icon_footer" class="fab fa-instagram"></i>
+  <i id="icon_footer" class="fab fa-snapchat-square"></i>
+  <i id="icon_footer" class="fas fa-grip-lines-vertical"></i>
+  <i id="icon_footer" class="fab fa-cc-visa"></i>
+  <i id="icon_footer" class="fab fa-cc-mastercard"></i>
+  <i id="icon_footer" class="fab fa-paypal"></i>
+  <i id="icon_footer" class="fab fa-cc-amex"></i>
+  <i id="icon_footer" class="fab fa-cc-paypal"></i>
+</div>
+
+
+
 </body>
 </html>
+
+<script type="module">
+  
+
+    import bar from "./scripts/Footer.js";
+  
+  let footer_div = document.getElementById("footer");
+  
+  footer_div.innerHTML = bar();
+  
+  </script>
+  
+  

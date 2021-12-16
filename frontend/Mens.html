@@ -222,9 +222,11 @@
         </div>
     </nav>
 
+    <div id="goods_dropDown"></div>
+
 
     <div class="productTileOne">
-        <h1 class="head">All Mutual Funds</h2>
+        <h1 class="head">All Mens T-shirts Products</h2>
 
             <select id="Sort" class="Sort" onchange="Sorting()">
                 <option > Sort by:</option>
@@ -341,12 +343,45 @@
 
 
     <div id="prod"></div>
+
+    <!--------------------------------------------------------------------------------------------------------------------------->
+<div id="footer" class="footer">
+
+  
+
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<div class="socialMediaIcons">
+  <i id="icon_footer" class="fab fa-facebook-square"></i>
+  <i id="icon_footer" class="fab fa-instagram"></i>
+  <i id="icon_footer" class="fab fa-snapchat-square"></i>
+  <i id="icon_footer" class="fas fa-grip-lines-vertical"></i>
+  <i id="icon_footer" class="fab fa-cc-visa"></i>
+  <i id="icon_footer" class="fab fa-cc-mastercard"></i>
+  <i id="icon_footer" class="fab fa-paypal"></i>
+  <i id="icon_footer" class="fab fa-cc-amex"></i>
+  <i id="icon_footer" class="fab fa-cc-paypal"></i>
+</div>
+
+
     
 </body>
 </html>
 
-<script src="./MensApp.js">
+<script src="./scripts/MensApp.js">
 </script>
+
+<script type="module">
+  
+
+    import bar from "./scripts/Footer.js";
+  
+  let footer_div = document.getElementById("footer");
+  
+  footer_div.innerHTML = bar();
+  
+  </script>
  
  
  

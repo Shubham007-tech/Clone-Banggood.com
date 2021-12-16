@@ -211,3 +211,34 @@ text-align: left;
 
 
 }
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+
+.bold_foot {
+  font-weight: 700;
+ }
+
+.socialMediaIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ #icon_footer {
+  margin: 1%;
+  font-size: 130%;
+ }
+
+ .foot_text{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+ }

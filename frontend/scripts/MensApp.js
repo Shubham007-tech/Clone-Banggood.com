@@ -492,3 +492,135 @@ function referData(p) {
 }
 
 
+
+/////////////////////////////////////////////////////////////// Debouncing ////////////////////////////////
+
+
+let timerId;
+let dropdownBox = document.getElementById("dropDown");
+let searchInput = document.getElementById("Search_input");
+let goods_dropDown = document.getElementById("goods_dropDown");
+
+
+searchInput.oninput = () => {
+    deBounce(showData, 1000);
+};
+
+function showData(){
+    let inputValue = document.getElementById("Search_input").value;
+    fetch("http://localhost:4000/api/products")
+    .then((res) => {
+       // console.log("Debounce" , res);
+        return res.json();
+       
+    })
+    .then((res) => {
+        console.log("For Search: ", res);
+        let productArr = [];
+        res.forEach(function(data){
+            
+          let helpArr= data.title.split(" ")
+
+         //console.log("myhelp",helpArr)
+
+         for(let i=0 ; i<helpArr.length; i++)
+          {
+           
+            if(inputValue== helpArr[i]|| inputValue== helpArr[i].toLowerCase() || inputValue== helpArr[i].toUpperCase() )
+               productArr.push(data)
+
+          }
+
+          
+
+
+        });
+
+        My_dropDown(productArr);
+        console.log("finalArr",productArr)
+
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+}
+
+
+
+
+function  My_dropDown(mov)
+ {
+   console.log("dorp_Fire")
+  goods_dropDown.innerHTML=null;
+    
+   mov.forEach(function(x){
+    
+    let p = document.createElement('button')
+    p.setAttribute("class" , "dropDown_Data")
+   
+    p.onclick = function () {
+        referData_deb(x)
+    }
+
+
+      
+          p.innerText = x.title;
+          p.Value = x.title;
+
+
+         
+        
+
+         
+
+         goods_dropDown.append(p);
+
+
+
+
+
+   });
+
+
+
+
+ }
+
+
+
+ if (localStorage.getItem("itemData") == null) {
+    localStorage.setItem("itemData", JSON.stringify([]));
+}
+
+
+function referData_deb(p) {
+
+    var ProductDes = JSON.parse(localStorage.getItem("itemData"));
+
+    ProductDes = [];
+
+    ProductDes.push(p);
+    console.log("pushed" , p)
+
+    localStorage.setItem("itemData", JSON.stringify(ProductDes));
+
+    window.location.href = "MensDescription.html";
+}
+
+
+
+
+
+
+
+
+
+
+function deBounce(func, delay){
+    if(timerId){
+        clearTimeout(timerId);
+    }
+    timerId = setTimeout(function(){
+        func();
+    }, delay);
+}
