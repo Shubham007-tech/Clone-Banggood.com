@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <style>
+        body{
+            width:100%;
+        margin:0;
+        padding:0;
+        
+
+        }
+      #container {
+        width:100%;
+        margin:0;
+        padding:0;
+       margin:auto;
+       color:whitesmoke;
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: #f7f7f7;
+       border:1px solid #f7f7f7;
+
+      }
+      .signUp{
+          margin-top: 70px;
+          width:400px;
+          margin-left: 570px;
+          
+          background-color: #ffffff;
+          border-radius: 0.3rem;
+      }
+      .signIn{
+          margin-top: 70px;
+          border:1px solid #f7f7f7;
+          width:400px;
+          height:480px;
+          margin-left: 36%;
+          border-radius: 0.3rem;
+          background-color: #ffffff;
+      }
+     
+
+
+   .btn{
+       width:388px;
+       height:55px;
+       margin:auto;
+       margin-left: 5px;
+       
+       margin-top:35px;
+       padding:4px;
+       background-color: orangered;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 20px;
+       color:whitesmoke;
+       border-style: none;
+       border-radius: 0.2rem;
+   }
+   .top_log{
+       width:100%;
+       height: 120px;
+       border: 1px solid rgb(250, 249, 249);
+
+   }
+   .wh_icon{
+       margin-top: 20px;
+       margin-left: 160px;
+   }
+   .log{
+       display:flex;
+       color: orangered;
+       row-gap: 40px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 17px;
+       margin-bottom: 60px;
+   }
+   .log a{
+       color: black;
+       text-decoration: none;
+       margin-left: 80px;
+   }
+   input{
+       margin:auto;
+       margin-left: 5px;
+       width:380px;
+       height:50px;
+       border-style: none;
+       border:1px solid rgba(82, 79, 79, 0.295);
+   }
+   .sd{
+       margin-top: 20px;
+   }
+    </style>
+  </head>
+  <body>
+    <div class="top_log">
+        <img class="wh_icon" src="Logo_White.PNG"    />
+       </div>
+   
+       <div id="container">
+        <div class="signUp">  
+            <div class="log">
+                <h2 style="margin-left: 60px;"> Register</h2>
+                <a href="Login.html"><h2 >SignIN</h2></a>
+    
+              </div>
+            <form >
+                
+                   <input type="text" id="name" placeholder="name" />
+                   <input type="email" id="email" placeholder="email" />
+                   <input type="password" id="password" placeholder="password" />
+                   <input type="text" id="username" placeholder="username" />
+                   <input type="number" id="mobile" placeholder="Mobile" />
+                   <input type="text" id="description" placeholder="Description" />
+                   <br>
+                     <button class="btn" onclick="Register(event)">Signup</button>
+                 
+               </form>
+             </div>
+       
+     
+
+
+      
+
+    </div>
+  </body>
+</html>
+
+<script>
+
+    /*
+
+  <div class="signIn">
+          <div class="log">
+            <h2 style="margin-left: 60px;">SignIN</h2>
+            <a href=""><h2 style="">Register</h2></a>
+
+          </div>
+           
+            <input type="text" class="input_style" id="login-username" placeholder="username" />
+            <input type="number" class="input_style sd"id="login-password" placeholder="Password" />
+            <br>
+            <button class="btn" onclick="Login(event)">SignIn</button></td>
+          
+      </div>
+
+   
+     
+
+
+
+    */
+
+  //https://masai-api-mocker.herokuapp.com/auth/register
+  // 
+ 
+  async function Register(e) {
+    e.preventDefault();
+  
+    // 1. get all the input values & store it in an object
+    //.Convert the object to json
+    // send data to server (fetch)
+    let signup_data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+      username: document.getElementById("username").value,
+      mobile: document.getElementById("username").value,
+      mobile: document.getElementById("mobile").value,
+      description: document.getElementById("description").value,
+    };
+    
+    signup_data = JSON.stringify(signup_data);// since server understad JSON 
+    console.log("Signupdata:", signup_data);
+    
+    let register_api = `https://masai-api-mocker.herokuapp.com/auth/register`;
+    
+   
+    let response = await fetch(register_api, {
+      method: "POST",
+      body: signup_data,  // body of it has that json file
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    let data = await response.json();
+    console.log("data:", data);
+  }
+
+
+
+  async function Login(e) {
+    e.preventDefault();
+    let login_data = {
+      username: document.getElementById("login-username").value,
+      password: document.getElementById("login-password").value,
+    };
+    
+    let login_api = `https://masai-api-mocker.herokuapp.com/auth/login`;
+    login_data = JSON.stringify(login_data);
+
+    let response = await fetch(login_api, {
+      method: "POST",
+      body: login_data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    let data = await response.json();
+    console.log("logeddata:", data);
+
+    if(data.error==true)
+     {
+         alert("Invalid Credentials")
+     }
+     if(data.error==false)
+     {
+        let username = document.getElementById("login-username").value;
+    getProfile(username, data.token);
+
+     }
+
+    
+  }
+
+
+
+  async function getProfile(username, token) {
+    let api = `https://masai-api-mocker.herokuapp.com/user/${username}`;
+   
+    let response = await fetch(api, {
+      headers: {                            // by Default every Fetch is Get request that's why not Typed.
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,    // way to authoraised in that server(masai)
+      },
+    });
+    let data = await response.json();
+
+    console.log("GetProfile_data:", data);
+    //
+    
+    window.location.href="Home.html";
+    
+    
+  }
+</script>
