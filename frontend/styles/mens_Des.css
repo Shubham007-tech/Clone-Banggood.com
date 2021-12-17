@@ -110,6 +110,12 @@ display:inline-block;
 
 }
 
+.buyNow:hover{
+
+    background-color: #f80606fa;
+
+}
+
 .buyNow_Orange{
     background-color: #ff9900;
 
@@ -133,3 +139,53 @@ display:inline-block;
 
 
 }
+
+.buyNow_Orange:hover{
+
+
+ background-color: #f09000;
+
+}
+
+.spec_small_txt{
+    margin-left: 5px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(95, 94, 94);
+font-weight: 500;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.line{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:rgb(15, 14, 14);
+    font-size: 22px;
+    
+    text-decoration: underline;
+
+}
+.line_sub{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+}
+.info_main_box{
+    width:100%;
+    
+}
+
+
+.hov:hover {
+    transform: scale(1.01);
+ }
+    #des_infoAll{
+        background-color: #ffffff;
+        margin:auto;
+        width:80%;
+        height: 400px;
+        border: 1px solid palevioletred;
+        border-radius: 0.2rem;
+    }

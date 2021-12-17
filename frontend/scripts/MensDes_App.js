@@ -5,6 +5,9 @@ let Upper_left_des = document.getElementById("Upper_left_des")
 let Upper_right_des = document.getElementById("Upper_right_des")
 
 
+let specs = document.getElementById("specs")
+
+
 function showProduct_Description(d)
  {
   
@@ -118,6 +121,53 @@ function showProduct_Description(d)
 
 
      buy_div.append(buy_Now , add_Cart )
+    
+
+
+
+
+
+     
+      let br= document.createElement('p');
+      br.textContent= "Brand: "+el.brand;
+      br.setAttribute("class", "spec_small_txt")
+
+      
+      let cl= document.createElement('p');
+      cl.textContent= "Color: "+el.color;
+      cl.setAttribute("class", "spec_small_txt")
+
+      let dec= document.createElement('p');
+      dec.textContent= "Decoration: "+el.decoration;
+      dec.setAttribute("class", "spec_small_txt")
+
+      let off= document.createElement('p');
+      off.textContent= "Discount: "+el.discount;
+      off.setAttribute("class", "spec_small_txt")
+
+      let fitS= document.createElement('p');
+      fitS.textContent= "Fit Type: "+el.fit_type;
+      fitS.setAttribute("class", "spec_small_txt")
+
+      let mat= document.createElement('p');
+      mat.textContent= "Material: "+el.material;
+      mat.setAttribute("class", "spec_small_txt")
+
+      let pat= document.createElement('p');
+      pat.textContent= "Pattern: "+el.pattern_type;
+      pat.setAttribute("class", "spec_small_txt")
+
+
+
+
+
+    
+
+
+
+     specs.append(br ,cl , dec, off, fitS , mat, pat)
+
+
 
      
     title_div.append(title , rating , price, discount , color , size, ship , buy_div, secure_text,secure_textB, cus,textB)
@@ -138,6 +188,20 @@ function showProduct_Description(d)
 
 
  showProduct_Description(productArr)
+
+
+
+ let products_container = document.getElementById("products_container")
+
+
+products_container.onclick= function (){
+
+    window.location.href='Mens.html';
+   
+    }
+    
+
+
 
 
 
