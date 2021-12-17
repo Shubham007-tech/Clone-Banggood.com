@@ -1,8 +1,9 @@
 .Upper_Des_Box{
        
     width:99%;
-    height: 900px;
-    border: 1px solid rgb(255, 51, 0);
+    height: 810px;
+    border: 1px solid #f7f7f7ee;
+    
     display:flex;
  }
 
@@ -10,7 +11,7 @@
      margin: 10px 10px 20px 10px;
      width: 42%;
      height:790px;
-     border: 1px solid black;
+   /*  border: 1px solid black; */
 
  }
 
@@ -18,8 +19,9 @@
 
     margin: 10px 10px 20px 10px;
      width: 55%;
-     height:830px;
-     border: 1px solid rgb(48, 2, 2);
+     height:760px;
+    border: 1px solid #f7f7f7; 
+  
 
  }
 
@@ -82,7 +84,7 @@ display:inline-block;
 .buy_div{
     margin-top: 50px;
     margin-left: 5px;
-    border: 1px solid blue;
+   /* border: 1px solid blue; */
     width: 90%;
     height: 130px; 
     display: flex;
@@ -186,6 +188,6 @@ font-family: Arial, Helvetica, sans-serif;
         margin:auto;
         width:80%;
         height: 400px;
-        border: 1px solid palevioletred;
+        border: 1px solid #ffffff;
         border-radius: 0.2rem;
     }
