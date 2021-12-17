@@ -27,7 +27,7 @@ where people can by any products like clothes , electronics, mobile , electronic
 ![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/MensProducts.png)
 
 ### Product Description Page
-![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/product descripton.png)
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/product%20descripton.png)
 
 ### Checkout Page
 ![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/CheckoutPage.png)
