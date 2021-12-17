@@ -15,23 +15,25 @@ where people can by any products like clothes , electronics, mobile , electronic
 
 
 
-### Sign up Page
-![](https://github.com/taherahmed14/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Signup.png)
+
 
 ### Home Page
-![](https://github.com/taherahmed14/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Home%20Page.png)
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/Homepage.png)
+
+### Sign In Page
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/SignIn.png)
 
 ### Product Page
-![](https://github.com/taherahmed14/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Product%20Page.png)
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/MensProducts.png)
 
 ### Product Description Page
-![](https://github.com/taherahmed14/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Product%20Description.png)
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/product descripton.png)
 
 ### Checkout Page
-![](https://github.com/taherahmed14/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Cart%20Page.png)
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/CheckoutPage.png)
 
-### Payment Page
-![](https://github.com/taherahmed14/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Payment%20Page.png)
+### Cart Page
+![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/CartPage.png)
 
 
 
@@ -62,5 +64,4 @@ To run, follow these steps:
 
 
 - [@Shubham Bharti](https://github.com/Shubham007-tech)
-
 
