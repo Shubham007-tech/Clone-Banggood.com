@@ -24,6 +24,7 @@ function showProduct_Description(d)
     let img = document.createElement('img');
     img.src= el.product_image;
     img.setAttribute("class" , "des_image")
+    img.setAttribute("id" , "magnify_image")
     
     let title_div = document.createElement('div');
     title_div.setAttribute("class" , "title_div");
