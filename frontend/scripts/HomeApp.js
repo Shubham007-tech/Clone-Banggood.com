@@ -75,7 +75,7 @@ deBounce(showData, 1000);
 
 function showData(){
 let inputValue = document.getElementById("Search_input").value;
-fetch("http://localhost:4000/api/products")
+fetch("https://shubham007-tech.github.io/Bangood_Api/db.json")
 .then((res) => {
    // console.log("Debounce" , res);
     return res.json();

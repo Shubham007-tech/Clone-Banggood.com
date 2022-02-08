@@ -1,7 +1,7 @@
 var data;
   
-     //To GET data from server
-     fetch("http://localhost:4000/api/products")
+     //To GET data from server   https://shubham007-tech.github.io/Bangood_Api/db.json
+     fetch("https://shubham007-tech.github.io/Bangood_Api/db.json")
      .then((res) => {
          return res.json();
      })
