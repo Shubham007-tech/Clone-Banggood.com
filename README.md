@@ -11,7 +11,9 @@ where people can by any products like clothes , electronics, mobile , electronic
                SignIn|SignUp with Api authentication
                User centered design and categorize option
                Product full description.
-
+  It is solo project made under 4 days with the help of HTML3 , CSS5, Javascript(es6) , NodeJS , Api 
+  
+feel free to look at this project below
 Deployed link- https://shubham007-tech.github.io/Clone-Banggood.com/
 
 </td>
