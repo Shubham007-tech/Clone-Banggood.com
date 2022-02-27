@@ -21,9 +21,6 @@ Deployed link- https://shubham007-tech.github.io/Clone-Banggood.com/
 </table>
 
 
-
-
-
 ### Home Page
 ![](https://github.com/Shubham007-tech/Clone-Banggood.com/blob/main/Images/Homepage.png)
 
