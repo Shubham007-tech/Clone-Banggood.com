@@ -4,7 +4,6 @@
 <tr>
 <td>
 
-
 Banggood is a global Leading Online Shop founded in year 2006 
 where people can by any products like clothes , electronics, mobile , electronics , home appliance etc.
   Some key features of this project -
