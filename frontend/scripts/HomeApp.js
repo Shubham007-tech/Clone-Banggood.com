@@ -41,6 +41,7 @@ function startSlideshow(){
         }
 
     let img = document.createElement("img");
+    img.setAttribute("class" , "slideImage")
     img.src = images[cont];
 
     container.append(img);
