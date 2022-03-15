@@ -64,7 +64,7 @@ body{
   margin-left: 7px;
   margin-top: 0px;
   border: 1px solid aqua; 
-  width:280px;
+  width:260px;
   height:700px;
 }
 .slide_box{
@@ -76,6 +76,7 @@ body{
 }
 
 .slideImage{
+  margin:auto;
   width:99%;
 }
 /*  -----------------------------------------------------------------------------------  */
